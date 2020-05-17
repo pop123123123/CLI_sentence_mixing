@@ -1,0 +1,27 @@
+fail_fast: true
+repos:
+# Format code to pattern (Black)
+-   repo: https://github.com/psf/black
+    rev: 19.10b0
+    hooks:
+    -   id: black
+        language_version: python3
+# Checking if large files are present
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.5.0
+    hooks:
+    -   id: check-added-large-files
+# Checking code compliance to pep8 (Flake 8, McCabe)
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.7.9
+    hooks:
+    -   id: flake8
+# Sorting imports (isort)
+-   repo: https://github.com/asottile/seed-isort-config
+    rev: v2.1.0
+    hooks:
+    -   id: seed-isort-config
+-   repo: https://github.com/pre-commit/mirrors-isort
+    rev: v4.3.21
+    hooks:
+    -   id: isort

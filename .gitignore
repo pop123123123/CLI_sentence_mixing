@@ -1,0 +1,6 @@
+.downloads/
+**/__pycache__/
+.env/
+config.json
+out.wav
+out.mp4
