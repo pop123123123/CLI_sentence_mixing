@@ -9,6 +9,8 @@ from sentence_mixing.video_creator.video import create_video_file
 
 from cli_interface import loop_interface
 
+VIDEO_OUT = "out.mp4"
+
 
 def main(audio_command, config_path, skip_first, urls):
     sm.prepare_sm(config_path)
@@ -27,7 +29,7 @@ def main(audio_command, config_path, skip_first, urls):
         assert p[:n] == v._base_path
         v.extension = p[n + 1 :]
 
-    create_video_file(total_timestamps, paths)
+    create_video_file(total_timestamps, VIDEO_OUT)
 
     return total_text
 
