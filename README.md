@@ -18,7 +18,7 @@ Example:
 ### Sanity check
 
 Use the file ```sample_cli.py```,  a minimal example for the sentence mixing library.  
-If no error pops, the Sentence Mixing library is correctly installed.  
+If no error pops, the Sentence Mixing library and the external dependencies are correctly installed.  
 Example:  
 ```python sample_cli.py "Test sentence" ../config.json https://www.youtube.com/watch?v=4czmCgJryUM```
 
