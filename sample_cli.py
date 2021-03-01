@@ -37,6 +37,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    sm.prepare_sm(args.config_path)
+    sm.prepare_sm_config_file(args.config_path)
     videos = sm.get_videos(args.video_urls)
     print(sm.process_sm(args.sentence, videos, args.seed)[0])

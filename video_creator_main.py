@@ -13,7 +13,7 @@ VIDEO_OUT = "out.mp4"
 
 
 def main(audio_command, config_path, skip_first, urls):
-    sm.prepare_sm(config_path)
+    sm.prepare_sm_config_file(config_path)
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
         futures_vids = executor.map(dl_video, urls)

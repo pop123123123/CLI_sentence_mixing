@@ -80,7 +80,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     out_dir = args.out_dir
 
-    sm.prepare_sm(args.config_path)
+    sm.prepare_sm_config_file(args.config_path)
     videos = sm.get_videos(args.video_urls)
     combos = sm.process_sm(args.sentence, videos, args.seed)
 
