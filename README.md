@@ -6,7 +6,7 @@ This program uses the [Sentence Mixing library](http://github.com/pop123123123/s
 
 1. Clone the [Sentence Mixing library](http://github.com/pop123123123/sentence-mixing)
 2. Install the library by doing ```pip install -e [path to sentence mixing library]```
-3. Set up the external dependencies by following the tutorial in [SM library github page](https://github.com/pop123123123/sentence-mixing)
+3. Set up the external dependencies by following the [tutorial in SM library github page](https://github.com/pop123123123/sentence-mixing#mfa)
 
 ### Audio feedback
 
@@ -24,7 +24,7 @@ Example:
 
 ## Program usage
 
-Full CLI application with handy control interface.
+The following sections will explain you how to run and interact with the CLI Youtube Poop generation program.
 
 ### Running the script
 
@@ -56,8 +56,6 @@ The audio sequence creation process works then as follows:
 	* ```y``` to accept the current combo and go to next chunk
 3. Loops to 1. until you enter an empty chunk
 4. The full video is formed from the selected combo
-
-Concerning the audio feedback mentioned at point 2:  
 
 ## Tips
 
