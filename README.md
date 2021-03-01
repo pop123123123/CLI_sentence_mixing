@@ -1,6 +1,6 @@
 # Sentence Mixing generator - command line interface
 
-This program uses [Sentence Mixing library](http://github.com/pop123123123/sentence-mixing) to generate sentence mixing styled Youtube Poops.
+This program uses [Sentence Mixing library](http://github.com/pop123123123/sentence-mixing) to **generate** sentence mixing styled **Youtube Poops**.
 
 ## Installation
 
