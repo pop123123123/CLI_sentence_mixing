@@ -61,7 +61,7 @@ Concerning the audio feedback mentioned at point 2:
 ## Tips
 
 * Only subtitled youtube videos are usable
-* Spaces count as blank phonems. It can be very useful to add pause in your sentences.
+* Punctuation symbols count as blank phonems. It can be very useful to add pause in your sentences.
 * Do not hesitate to put a lot of Youtube URLs in argument. The more the video material, the more choice you will have to form the sentences you want
 * An already downloaded video will not be downloaded again. So, do not hesitate then to download long videos to boost accuracy.
 * Advance little by little
