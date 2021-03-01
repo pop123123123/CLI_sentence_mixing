@@ -12,7 +12,8 @@ This program uses the [Sentence Mixing library](http://github.com/pop123123123/s
 
 By default, the script uses the ```tycat``` command, available on [Terminology](https://github.com/borisfaure/terminology) terminal emulator to play the audio feedback while building the video.  
 If you want to use any other program, juste change the global variable ```DEFAULT_AUDIO_COMMAND``` in ```video_creator_main.py```. The associated audio file is automatically given as argument.  
-Example: ```DEFAULT_AUDIO_COMMAND = 'vlc "{}"'```
+Example:  
+```DEFAULT_AUDIO_COMMAND = 'vlc "{}"'```
 
 ### Sanity check
 
