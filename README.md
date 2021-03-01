@@ -1,6 +1,6 @@
 # Sentence Mixing generator - command line interface
 
-This program uses [Sentence Mixing library](http://github.com/pop123123123/sentence-mixing) to **generate** sentence mixing styled **Youtube Poops**.
+This program uses the [Sentence Mixing library](http://github.com/pop123123123/sentence-mixing) to **generate** sentence mixing styled **Youtube Poops**.
 
 ## Installation
 
@@ -8,10 +8,16 @@ This program uses [Sentence Mixing library](http://github.com/pop123123123/sente
 2. Install the library by doing ```pip install -e [path to sentence mixing library]```
 3. Set up the external dependencies by following the tutorial in [SM library github page](https://github.com/pop123123123/sentence-mixing)
 
+### Audio feedback
+
+By default, the script uses the ```tycat``` command, available on [Terminology](https://github.com/borisfaure/terminology) terminal emulator to play the audio feedback while building the video.  
+If you want to use any other program, juste change the global variable ```DEFAULT_AUDIO_COMMAND``` in ```video_creator_main.py```. The associated audio file is automatically given as argument.  
+Example: ```DEFAULT_AUDIO_COMMAND = 'vlc "{}"'```
+
 ### Sanity check
 
 Use the file ```sample_cli.py```,  a minimal example for the sentence mixing library.  
-If no error pops, you are sure that Sentence Mixing library is correctly installed.  
+If no error pops, the Sentence Mixing library is correctly installed.  
 Example:  
 ```python sample_cli.py "Test sentence" ../config.json https://www.youtube.com/watch?v=4czmCgJryUM```
 
@@ -21,7 +27,7 @@ Full CLI application with handy control interface.
 
 ### Running the script
 
-Give your json configuration file as first argument, then give as many youtube links as you want.  
+Give your json configuration file as first argument, then give as many Youtube URLs as you want.  
 
 Example:  
 ```python video_creator_main.py config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
@@ -52,16 +58,10 @@ The audio sequence creation process works then as follows:
 
 Concerning the audio feedback mentioned at point 2:  
 
-### Audio feedback
-
-By default, the script uses the ```tycat``` command, available on [Terminology](https://github.com/borisfaure/terminology) terminal emulator to play the audio feedback.  
-If you want to use any other program, juste change the global variable ```DEFAULT_AUDIO_COMMAND``` in ```video_creator_main.py```. The associated audio file is automatically given as argument.  
-Example: ```DEFAULT_AUDIO_COMMAND = 'vlc "{}"'```
-
 ## Tips
 
 * Only subtitled youtube videos are usable
 * Spaces count as blank phonems. It can be very useful to add pause in your sentences.
-* Do not hesitate to put a lot of Youtube links in argument. The more the video material, the more choice you will have to form the sentences you want
-* An already downloaded video will not be downloaded again. Once more, do not hesitate then to download long videos to boost accuracy.
+* Do not hesitate to put a lot of Youtube URLs in argument. The more the video material, the more choice you will have to form the sentences you want
+* An already downloaded video will not be downloaded again. So, do not hesitate then to download long videos to boost accuracy.
 * Advance little by little
