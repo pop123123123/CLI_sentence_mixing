@@ -40,10 +40,10 @@ There is no optimal way to divide a target speech to chunk. Just do as you wish.
 Examples:  
 Target sentence: Salut la compagnie  
 Possible chunks:  
-	* Salut | la | con | pas | nie
-	* Salut la compagnie
-	* Salut | la compagnie
-	* ...
+* Salut | la | con | pas | nie
+* Salut la compagnie
+* Salut | la compagnie
+* ...
 
 The audio sequence creation process works then as follows:
 1. Enter the chunk of the sentence you want to hear
