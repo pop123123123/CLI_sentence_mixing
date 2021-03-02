@@ -8,26 +8,25 @@ This program uses [Sentence Mixing library](http://github.com/pop123123123/sente
 2. Install the library by doing ```pip install -e [path to sentence mixing library]```
 3. Set up the external dependencies by following the tutorial in [SM library github page](https://github.com/pop123123123/sentence-mixing)
 
-## Entrypoints
+### Sanity check
 
-### sample_cli.py
+Use the file ```sample_cli.py```,  a minimal example for the sentence mixing library.  
+If no error pops, you are sure that Sentence Mixing library is correctly installed.  
+Example:  
+```python sample_cli.py "Test sentence" ../config.json https://www.youtube.com/watch?v=4czmCgJryUM```
 
-Minimal example for the sentence mixing library.
-**You should use it to make sure everything is working.**
-Returns string representation of first selected combos.
-
-### video_creator_main.py
+## Program usage
 
 Full CLI application with handy control interface.
 
-#### Running the script
+### Running the script
 
 Give your json configuration file as first argument, then give as many youtube links as you want.  
 
 Example:  
 ```python video_creator_main.py config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
 
-#### Interactive process
+### Interactive process
 
 The script will prompt you to divide your target speech in different segments.
 There is no optimal way to divide a target speech to chunk. Just do as you wish.
@@ -53,13 +52,13 @@ The audio sequence creation process works then as follows:
 
 Concerning the audio feedback mentioned at point 2:  
 
-#### Audio feedback
+### Audio feedback
 
 By default, the script uses the ```tycat``` command, available on [Terminology](https://github.com/borisfaure/terminology) terminal emulator to play the audio feedback.  
 If you want to use any other program, juste change the global variable ```DEFAULT_AUDIO_COMMAND``` in ```video_creator_main.py```. The associated audio file is automatically given as argument.  
 Example: ```DEFAULT_AUDIO_COMMAND = 'vlc "{}"'```
 
-#### Tips
+## Tips
 
 * Only subtitled youtube videos are usable
 * Spaces count as blank phonems. It can be very useful to add pause in your sentences.
