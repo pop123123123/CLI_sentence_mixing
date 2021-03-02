@@ -54,8 +54,8 @@ The audio sequence creation process works then as follows:
 	* ```s``` to store the current combo in a buffer, so you can browse other combos without fearing to this one
 	* ```l + number``` to load a previously sotred combo
 	* ```y``` to accept the current combo and go to next chunk
-3. Loops to 1. until you enter an empty chunk
-4. The full video is formed from the selected combo
+3. Loop to 1. until you enter an empty chunk
+4. The full video is formed from the association of all the selected combo
 
 ## Tips
 
