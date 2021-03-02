@@ -28,7 +28,7 @@ The following sections will explain you how to run and interact with the CLI You
 
 ### Running the script
 
-Give your json configuration file as first argument, then give as many Youtube URLs as you want.  
+Run ```video_creator_main.py``` with your json configuration file as first argument, and as many Youtube URLs as you want.  
 
 Example:  
 ```python video_creator_main.py config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
