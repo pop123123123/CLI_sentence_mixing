@@ -7,11 +7,18 @@ This program uses the [Sentence Mixing library](http://github.com/pop123123123/s
 1. Install requirements with ```pip install -r requirements.txt```
 2. Set up the external dependencies by following the tutorial in [SM library github page](https://github.com/pop123123123/sentence-mixing)
 
+### Audio feedback
+
+By default, the script uses the ```tycat``` command, available on [Terminology](https://github.com/borisfaure/terminology) terminal emulator to play the audio feedback while building the video.
+If you want to use any other program, juste change the global variable ```DEFAULT_AUDIO_COMMAND``` in ```video_creator_main.py```. The associated audio file is automatically given as argument.
+Example:
+```DEFAULT_AUDIO_COMMAND = 'vlc "{}"'```
+
 ### Sanity check
 
-Use the file ```sample_cli.py```,  a minimal example for the sentence mixing library.  
-If no error pops, the Sentence Mixing library and the external dependencies are correctly installed.  
-Example:  
+Use the file ```sample_cli.py```,  a minimal example for the sentence mixing library.
+If no error pops, the Sentence Mixing library and the external dependencies are correctly installed.
+Example:
 ```python sample_cli.py "Test sentence" ../config.json https://www.youtube.com/watch?v=4czmCgJryUM```
 
 ## Program usage
@@ -20,9 +27,9 @@ The following sections will explain you how to run and interact with the CLI You
 
 ### Running the script
 
-Run ```video_creator_main.py``` with your json configuration file as first argument, and as many Youtube URLs as you want.  
+Run ```video_creator_main.py``` with your json configuration file as first argument, and as many Youtube URLs as you want.
 
-Example:  
+Example:
 ```python video_creator_main.py config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
 
 ### Interactive process
