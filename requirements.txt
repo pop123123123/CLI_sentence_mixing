@@ -1,1 +1,1 @@
-pre-commit==2.4.0
+sentence-mixing==1.1.0
