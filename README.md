@@ -4,16 +4,8 @@ This program uses the [Sentence Mixing library](http://github.com/pop123123123/s
 
 ## Installation
 
-1. Clone the [Sentence Mixing library](http://github.com/pop123123123/sentence-mixing)
-2. Install the library by doing ```pip install -e [path to sentence mixing library]```
-3. Set up the external dependencies by following the [tutorial in SM library github page](https://github.com/pop123123123/sentence-mixing#mfa)
-
-### Audio feedback
-
-By default, the script uses the ```tycat``` command, available on [Terminology](https://github.com/borisfaure/terminology) terminal emulator to play the audio feedback while building the video.  
-If you want to use any other program, juste change the global variable ```DEFAULT_AUDIO_COMMAND``` in ```video_creator_main.py```. The associated audio file is automatically given as argument.  
-Example:  
-```DEFAULT_AUDIO_COMMAND = 'vlc "{}"'```
+1. Install requirements with ```pip install -r requirements.txt```
+2. Set up the external dependencies by following the tutorial in [SM library github page](https://github.com/pop123123123/sentence-mixing)
 
 ### Sanity check
 
