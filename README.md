@@ -7,13 +7,6 @@ This program uses the [Sentence Mixing library](http://github.com/pop123123123/s
 1. Install requirements with ```pip install -r requirements.txt```
 2. Set up the external dependencies by following the tutorial in [SM library github page](https://github.com/pop123123123/sentence-mixing)
 
-### Audio feedback
-
-By default, the script uses the ```tycat``` command, available on [Terminology](https://github.com/borisfaure/terminology) terminal emulator to play the audio feedback while building the video.
-If you want to use any other program, juste change the global variable ```DEFAULT_AUDIO_COMMAND``` in ```video_creator_main.py```. The associated audio file is automatically given as argument.
-Example:
-```DEFAULT_AUDIO_COMMAND = 'vlc "{}"'```
-
 ### Sanity check
 
 Use the file ```sample_cli.py```,  a minimal example for the sentence mixing library.
@@ -33,6 +26,15 @@ Run ```video_creator_main.py``` with your json configuration file as first argum
 Example:
 ```python video_creator_main.py config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
 
+#### Audio feedback
+
+By default, the ```video_creator_main.py``` script uses the ```tycat``` command, available on [Terminology](https://github.com/borisfaure/terminology) terminal emulator to play the audio feedback while building the video.
+
+If you want to use any other program, give it to argument with -c. Replace the filename in the command by ```{}```.
+
+Example:  
+```python video_creator_main.py -c "vlc --play-and-exit --no-repeat --no-loop {}" config.json 'https://www.youtube.com/watch?v=udmDOaHN9no'```
+
 ### Interactive process
 
 The audio sequence creation process works as follows:
@@ -48,7 +50,7 @@ The audio sequence creation process works as follows:
 
 ## Tips
 
-* Only subtitled youtube videos are usable
+* Only subtitled youtube videos are usable.
 * Punctuation symbols count as blank phonems. It can be very useful to add pause in your sentences.
 * Do not hesitate to put a lot of Youtube URLs in argument. The more the video material, the more choice you will have to form the sentences you want.
 * An already downloaded video will not be downloaded again. So, do not hesitate then to download long videos to boost accuracy.
