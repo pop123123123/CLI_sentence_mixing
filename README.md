@@ -58,3 +58,8 @@ The audio sequence creation process works as follows:
 * For some long words, it can **sometimes** be interesting to split it in little chunks. For example, you can split the word *Compagnie* in three chunks *"Con"*, "*Pas*", *"Nie"*.
 * If a word you want to hear can be directly heard in one of the source video (same word or homophone), don't split it in chunks, it will directly been taken from the source video.
 * Related to previous point, try to use a maximum of words you can find in the original video. The result will be way more accurate and understandable.
+
+## Building project
+
+You can compile the program to use it freely without dependancies. Everything concerning this feature is explained in folder ```builder```.  
+This is completely non-mandatory to use the program.
