@@ -40,7 +40,7 @@ Example:
 The audio sequence creation process works as follows:
 1. Enter the chunk of the sentence you want to hear
 2. You will hear an audio feedback from the chosen combo. There you can press:
-	* ```ENTER``` if you are not satisfied with current combo for this chunk and want another phonems
+	* ```ENTER``` if you are not satisfied with current combo for this chunk and want another phonemes
 	* ```e``` to change the written chunk
 	* ```s``` to store the current combo in a buffer, so you can browse other combos without fearing to lose this one
 	* ```l + number``` to load a previously stored combo
@@ -50,7 +50,7 @@ The audio sequence creation process works as follows:
 
 ## Tips
 
-* Punctuation symbols count as blank phonems. It can be very useful to add pause in your sentences.
+* Punctuation symbols count as blank phonemes. It can be very useful to add pause in your sentences.
 * Do not hesitate to put a lot of Youtube URLs in argument. The more the video material, the more choice you will have to form the sentences you want.
 * An already downloaded video will not be downloaded again. So, do not hesitate then to download long videos to boost accuracy.
 * Advance little by little. There is no big difference in accuracy between long and short chunks, so, it is generally preferable to write short chunks (+/- 1 word by chunk) to have more control of how each word/syllabus sound. For example, it is probably better to split sentence *"Salut les gens"* in three chunks "*Salut*", "*les*", "*gens"* than in one big chunk "*Salut les gens*".
@@ -64,6 +64,12 @@ The audio sequence creation process works as follows:
 
 Only subtitled youtube videos are usable. Automatically generated youtube subtitles work as well.  
 If you really want to use a non subtitled video, you will have to write the subtitles yourself.
+
+### Phoneme not found
+
+If your source video corpus is very short or contains very few words, it might be possible that some phonemes are not prounounced at all through the whole video material.
+In that case, you will not be able to use these particular phonemes.  
+The problem can be easily solved by adding video material to the corpus, or not using these missing phonemes.
 
 ### Unrecognized word
 
@@ -79,12 +85,12 @@ For example, the word "Bolos" can be either:
 
 Unfortunately, the system doesn't tolerates ambiguous words for the moment.  
 For exemple, word "Est" can be pronounced:
-1. With phonem "e" (to be)
-2. With phonems "E s t" (east)
+1. With phoneme "e" (to be)
+2. With phonemes "E s t" (east)
 
 Thus, it is for the moment forbidden to write down word "Est". Waiting for a disambiguation feature, just **change the word for an homophone**.
 
-For word "Est", if you want to hear phonem "e", you can use word "Et" ; if you want to hear phonems "e s t", you can use the sequence of words "S" "te" (not perfect coverage of phonems in this case however).
+For word "Est", if you want to hear phoneme "e", you can use word "Et" ; if you want to hear phonemes "e s t", you can use the sequence of words "S" "te" (not perfect coverage of phonemes in this case however).
 
 ## Building project
 
