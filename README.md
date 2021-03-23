@@ -50,7 +50,6 @@ The audio sequence creation process works as follows:
 
 ## Tips
 
-* Only subtitled youtube videos are usable.
 * Punctuation symbols count as blank phonems. It can be very useful to add pause in your sentences.
 * Do not hesitate to put a lot of Youtube URLs in argument. The more the video material, the more choice you will have to form the sentences you want.
 * An already downloaded video will not be downloaded again. So, do not hesitate then to download long videos to boost accuracy.
@@ -58,8 +57,33 @@ The audio sequence creation process works as follows:
 * For some long words, it can **sometimes** be interesting to split it in little chunks. For example, you can split the word *Compagnie* in three chunks *"Con"*, "*Pas*", *"Nie"*.
 * If a word you want to hear can be directly heard in one of the source video (same word or homophone), don't split it in chunks, it will directly been taken from the source video. For example, if the word "Camp" is present in source subtitles, words "Camp", "Quand", "Quant" will automatically associate to the original "Camp".
 * Related to previous point, try to use a maximum of words you can find in the original video. The result will be way more accurate and understandable.
-* You can only enter a word that already exists in the dictionnary. If you want to hear an external word, you have two solutions: add the word in the dictionnary or split the word in sub-dictionnary-registered words. For example, the word "Bolos" can be either added in the dictionnary by adding the line "BOLOS b o l o s", either decomposed in three valid words "Beau l"eau se"
-* Unfortunately, the system doesn't tolerates ambiguous words for the moment. For exemple, word "Est" can pronounce with phonem "e" (to be), or phonems "E s t" (east); thus, it is forbidden to write down word "Est". Waiting for a disambiguation feature, just change the word for an homophone. For word "Est", if you want to hear phonem "e", you can use word "Et" ; if you want to hear phonems "e s t", you can use words "Ai se te" (not perfect coverage of phonems in this case however).
+
+## Restrictions and workarounds
+
+### Subtitles free videos
+
+Only subtitled youtube videos are usable.
+
+### Unrecognized word
+
+You can only enter a word that already exists in the dictionnary. If you want to hear an external word, you have two solutions:
+1. Add the word in the dictionnary
+2. Split the word in sub-dictionnary-registered words  
+
+For example, the word "Bolos" can be either:  
+1. Added in the dictionnary by adding the line "BOLOS b o l o s"
+2. Decomposed in three valid words "Beau l"eau se"
+
+### Ambiguity intolerance
+
+Unfortunately, the system doesn't tolerates ambiguous words for the moment.  
+For exemple, word "Est" can be pronounced:
+1. With phonem "e" (to be)
+2. With phonems "E s t" (east)
+
+Thus, it is for the moment forbidden to write down word "Est". Waiting for a disambiguation feature, just **change the word for an homophone**.
+
+For word "Est", if you want to hear phonem "e", you can use word "Et" ; if you want to hear phonems "e s t", you can use words "Ai se te" (not perfect coverage of phonems in this case however).
 
 ## Building project
 
