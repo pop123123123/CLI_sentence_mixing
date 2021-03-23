@@ -62,7 +62,8 @@ The audio sequence creation process works as follows:
 
 ### Subtitles free videos
 
-Only subtitled youtube videos are usable.
+Only subtitled youtube videos are usable. Automatically generated youtube subtitles work as well.  
+If you really want to use a non subtitled video, you will have to write the subtitles yourself.
 
 ### Unrecognized word
 
@@ -72,7 +73,7 @@ You can only enter a word that already exists in the dictionnary. If you want to
 
 For example, the word "Bolos" can be either:  
 1. Added in the dictionnary by adding the line "BOLOS b o l o s"
-2. Decomposed in three valid words "Beau l"eau se"
+2. Decomposed in three valid words "Beau" "l'eau" "se"
 
 ### Ambiguity intolerance
 
@@ -83,7 +84,7 @@ For exemple, word "Est" can be pronounced:
 
 Thus, it is for the moment forbidden to write down word "Est". Waiting for a disambiguation feature, just **change the word for an homophone**.
 
-For word "Est", if you want to hear phonem "e", you can use word "Et" ; if you want to hear phonems "e s t", you can use words "Ai se te" (not perfect coverage of phonems in this case however).
+For word "Est", if you want to hear phonem "e", you can use word "Et" ; if you want to hear phonems "e s t", you can use the sequence of words "S" "te" (not perfect coverage of phonems in this case however).
 
 ## Building project
 
