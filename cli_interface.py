@@ -6,6 +6,15 @@ from sentence_mixing.model.exceptions import PhonemError, TokenAmbiguityError
 from sentence_mixing.serialize import load, save
 from sentence_mixing.video_creator.audio import concat_wav
 
+# Allows command history
+try:
+    READLINE_IMPORTED = True
+    import readline
+    readline.set_auto_history(False)
+except:
+    # If python have been compiled without readline
+    READLINE_IMPORTED = False
+
 AUDIO_FILE_PATH = "out.wav"
 
 
@@ -16,7 +25,12 @@ def clear_screen():
 def get_sentence(text):
     if text is not None:
         print("Previous sentences:\n", text)
-    return input("Enter a sentence: ")
+    sentence = input("Enter a sentence: ")
+
+    if READLINE_IMPORTED:
+        readline.add_history(sentence)
+
+    return sentence
 
 
 def loop_interface(audio_command, video_futures):
