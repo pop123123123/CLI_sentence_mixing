@@ -1,0 +1,2 @@
+pyinstaller @ https://github.com/pyinstaller/pyinstaller/archive/develop.zip
+pyinstaller-hooks-contrib==2020.11

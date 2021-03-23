@@ -4,11 +4,8 @@ This guide explains how to compile the python script and all its dependencies to
 
 ## Building the program
 
-1. Install MFA through anaconda environment by following the [official tutorial](https://montreal-forced-aligner.readthedocs.io/en/latest/installation.html)
-2. Activate the conda environment with ```source /opt/anaconda/bin/activate root && conda activate aligner```
-3. Add the lib path of anaconda to ```LD_LIBRARY_PATH``` environment variable. Example: ```export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.conda/envs/aligner/lib/```
-4. Run ```builder.sh```
-5. Deactivate your conda environment with ```conda deactivate```
+1. Install the requirements with ```pip install -r requirements.txt```
+2. Run ```builder.sh```
 
 ## Usage
 
