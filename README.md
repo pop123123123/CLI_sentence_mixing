@@ -49,7 +49,7 @@ The audio sequence creation process works as follows:
 3. Loop to 1. until you enter an empty chunk
 4. The full video is formed from the association of all the selected combo
 
-## Tips
+### Tips
 
 * Punctuation symbols count as blank phonemes. It can be very useful to add pause in your sentences.
 * Do not hesitate to put a lot of Youtube URLs in argument. The more the video material, the more choice you will have to form the sentences you want.
@@ -59,20 +59,20 @@ The audio sequence creation process works as follows:
 * If a word you want to hear can be directly heard in one of the source video (same word or homophone), don't split it in chunks, it will directly been taken from the source video. For example, if the word "Camp" is present in source subtitles, words "Camp", "Quand", "Quant" will automatically associate to the original "Camp".
 * Related to previous point, try to use a maximum of words you can find in the original video. The result will be way more accurate and understandable.
 
-## Restrictions and workarounds
+### Restrictions and workarounds
 
-### Subtitles free videos
+#### Subtitles free videos
 
 Only subtitled youtube videos are usable. Automatically generated youtube subtitles work as well.  
 If you really want to use a non subtitled video, you will have to write the subtitles yourself.
 
-### Phoneme not found
+#### Phoneme not found
 
 If your source video corpus is very short or contains very few words, it might be possible that some phonemes are not prounounced at all through the whole video material.
 In that case, you will not be able to use these particular phonemes.  
 The problem can be easily solved by adding video material to the corpus, or not using these missing phonemes.
 
-### Unrecognized word
+#### Unrecognized word
 
 You can only enter a word that already exists in the dictionnary. If you want to hear an external word, you have two solutions:
 1. Add the word in the dictionnary
@@ -82,7 +82,7 @@ For example, the word "Bolos" can be either:
 1. Added in the dictionnary by adding the line "BOLOS b o l o s"
 2. Decomposed in three valid words "Beau" "l'eau" "se"
 
-### Ambiguity intolerance
+#### Ambiguity intolerance
 
 Unfortunately, the system doesn't tolerates ambiguous words for the moment.  
 For exemple, word "Est" can be pronounced:
