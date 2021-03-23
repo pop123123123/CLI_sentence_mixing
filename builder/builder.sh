@@ -19,7 +19,7 @@ echo "
     \"folder\": \".subs\"
 }" > config.json
 
-pyinstaller --name="P00pMaker" --windowed ../video_creator_main.py --add-data montreal-forced-aligner/bin:aligner/bin --add-data montreal-forced-aligner/pretrained_models:aligner/pretrained_models --add-data montreal-forced-aligner/lib:aligner/bin --add-data out:aligner/out --add-data SM-Dictionaries/fr.dict:aligner --add-data SM-Dictionaries/fr_consonant_vowel.dict:aligner --add-data french_prosodylab.zip:aligner/pretrained_models --add-data config.json:.
+pyinstaller --name="P00pMaker" ../video_creator_main.py --add-data montreal-forced-aligner/bin:aligner/bin --add-data montreal-forced-aligner/pretrained_models:aligner/pretrained_models --add-data montreal-forced-aligner/lib:aligner/bin --add-data out:aligner/out --add-data SM-Dictionaries/fr.dict:aligner --add-data SM-Dictionaries/fr_consonant_vowel.dict:aligner --add-data french_prosodylab.zip:aligner/pretrained_models --add-data config.json:.
 
 rm montreal-forced-aligner_linux.tar.gz
 rm french_prosodylab.zip

@@ -1,1 +1,1 @@
-sentence-mixing==1.1.1
+sentence-mixing==1.1.3
