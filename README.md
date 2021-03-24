@@ -2,6 +2,8 @@
 
 This program uses the [Sentence Mixing library](http://github.com/pop123123123/sentence-mixing) to **generate** sentence mixing styled **Youtube Poops**.
 
+You can get it via the release tab or install it manually.
+
 ## Installation
 
 1. Install requirements of CLI original project with ```pip install -r ../requirements.txt```
