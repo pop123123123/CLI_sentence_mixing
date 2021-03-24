@@ -16,4 +16,5 @@ Example:
 
 ## Cleanup
 
-You can then remove the build and cleanup everything by running ```clean.sh```
+You can then remove the build and cleanup everything by running ```clean.sh```  
+Use the argument --hard to remove MFA tarball and model zip.
