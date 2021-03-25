@@ -35,27 +35,19 @@ The following sections will explain you how to run and interact with the CLI You
 
 ##### Linux
 
-Run ```P00pMaker``` with your json configuration file as first argument, and as many Youtube URLs as you want.
+The file to run may vary:
+* ```P00pMaker``` for Linux release
+* ```P00pMaker.exe``` for Windows release
+* ```video_creator_main.py``` when you run it from source (must be executed by ```python```)
 
-Example:
-```P00pMaker config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
+Run the executable with your json configuration file as first argument, and as many Youtube URLs as you want.
 
-##### Windows
+Examples:
+* Linux: ```P00pMaker config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
+* Windows: ```P00pMaker.exe config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
+* From source: ```python video_creator_main.py config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
 
-Run the program with admin powershell.  
-The program might be blocked by your antivirus, be aware of this possibility.
-
-Run ```P00pMaker.exe``` with your json configuration file as first argument, and as many Youtube URLs as you want.
-
-Example:
-```P00pMaker.exe config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
-
-#### From source
-
-Run ```video_creator_main.py``` with your json configuration file as first argument, and as many Youtube URLs as you want.
-
-Example:
-```python video_creator_main.py config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
+For windows, the program might be blocked by your antivirus, be aware of this possibility.
 
 #### Audio feedback
 
@@ -140,5 +132,5 @@ For word "Est", if you want to hear phoneme "e", you can use word "Et" ; if you 
 
 ## Building project
 
-You can compile the program to use it freely without dependancies. Everything concerning this feature is explained in folder ```builder```.  
-This is completely non-mandatory to use the program.
+You can make your own release of the program in order to use it freely without dependancies.  
+Everything concerning this feature is explained in folder ```builder```.  
