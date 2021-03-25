@@ -4,8 +4,11 @@ This guide explains how to compile the python script and all its dependencies to
 
 ## Building the program
 
-1. Install the requirements with ```pip install -r requirements.txt```
-2. Run ```builder.sh```
+1. Install the requirements of the main project ```pip install -r ../requirements.txt```
+2. Install the requirements with ```pip install -r requirements.txt```
+3. Run ```builder.sh```
+
+The compiled program is located in ```dist/P00pMaker```
 
 ## Cleanup
 
