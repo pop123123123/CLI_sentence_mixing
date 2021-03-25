@@ -32,9 +32,9 @@ The following sections will explain you how to run and interact with the CLI You
 ### Running the script
 
 The file to run may vary:
-* ```P00pMaker``` for Linux release
-* ```P00pMaker.exe``` for Windows release
-* ```video_creator_main.py``` when you run it from source (must be executed by ```python```)
+* **Linux** release: ```P00pMaker```
+* **Windows** release: ```P00pMaker.exe```
+* **From source:** ```video_creator_main.py```
 
 Run the executable with your json configuration file as first argument, and as many Youtube URLs as you want.
 
