@@ -13,4 +13,4 @@ The compiled program is located in ```dist/P00pMaker```
 ## Cleanup
 
 You can then remove the build and cleanup everything by running ```clean.sh```  
-Use the argument --hard to remove MFA tarball and model zip.
+Use the argument ```--hard``` to remove MFA tarball and model zip.
