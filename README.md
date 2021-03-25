@@ -31,10 +31,6 @@ The following sections will explain you how to run and interact with the CLI You
 
 ### Running the script
 
-#### Release
-
-##### Linux
-
 The file to run may vary:
 * ```P00pMaker``` for Linux release
 * ```P00pMaker.exe``` for Windows release
@@ -43,9 +39,9 @@ The file to run may vary:
 Run the executable with your json configuration file as first argument, and as many Youtube URLs as you want.
 
 Examples:
-* Linux: ```P00pMaker config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
-* Windows: ```P00pMaker.exe config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
-* From source: ```python video_creator_main.py config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
+* **Linux:** ```P00pMaker config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
+* **Windows:** ```P00pMaker.exe config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
+* **From source:** ```python video_creator_main.py config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
 
 For windows, the program might be blocked by your antivirus, be aware of this possibility.
 
