@@ -6,11 +6,18 @@ You can get it via the release tab or install it manually.
 
 ## Installation
 
+### Release
+
+1. Choose a [release version](https://github.com/pop123123123/CLI_sentence_mixing/releases)
+2. Uncompress the release archive 
+
+### From source
+
 1. Install requirements of CLI original project with ```pip install -r ../requirements.txt```
 2. Install requirements with ```pip install -r requirements.txt```
 3. Set up the external dependencies by following the tutorial in [SM library github page](https://github.com/pop123123123/sentence-mixing)
 
-### Sanity check
+#### Sanity check
 
 Use the file ```sample_cli.py```,  a minimal example for the sentence mixing library.
 If no error pops, the Sentence Mixing library and the external dependencies are correctly installed.
@@ -23,6 +30,27 @@ Example:
 The following sections will explain you how to run and interact with the CLI Youtube Poop generation program.
 
 ### Running the script
+
+#### Release
+
+##### Linux
+
+Run ```P00pMaker``` with your json configuration file as first argument, and as many Youtube URLs as you want.
+
+Example:
+```P00pMaker config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
+
+##### Windows
+
+Run the program with admin powershell.  
+The program might be blocked by your antivirus, be aware of this possibility.
+
+Run ```P00pMaker.exe``` with your json configuration file as first argument, and as many Youtube URLs as you want.
+
+Example:
+```P00pMaker.exe config.json 'https://www.youtube.com/watch?v=udmDOaHN9no https://www.youtube.com/watch?v=7CTH59GCNko'```
+
+#### From source
 
 Run ```video_creator_main.py``` with your json configuration file as first argument, and as many Youtube URLs as you want.
 
@@ -37,6 +65,21 @@ If you want to use any other program, give it to argument with -c. Replace the f
 
 Example:  
 ```python video_creator_main.py -c "vlc --play-and-exit --no-repeat --no-loop {}" config.json 'https://www.youtube.com/watch?v=udmDOaHN9no'```
+
+##### For Windows release
+
+You will face a problem if the command you want to use contains a space in its path.
+
+Here is a simple trick to work around the problem. Let's say we want to use ```vlc``` as audio feedback command.  
+Create ```feedback.bat``` with the following content:
+```bat
+"C:\Program Files\VideoLAN\VLC\vlc.exe" --play-and-exit --no-repeat --no-loop %*
+```
+(Path to vlc might change depending of your setup)
+
+Then, call the program with the followin ```-c``` parameter:
+```./P00pMaker config.json 'https://www.youtube.com/watch?v=VTaoMHjnRbM' -c "feeback.bat {}"```
+
 
 ### Interactive process
 
