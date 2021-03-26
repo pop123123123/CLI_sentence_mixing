@@ -22,7 +22,7 @@ You can get it via the release tab or install it manually.
 Use the file ```sample_cli.py```,  a minimal example for the sentence mixing library.
 If no error pops, the Sentence Mixing library and the external dependencies are correctly installed.
 
-Example:
+Example:  
 ```python sample_cli.py "Bonjour" ../config.json https://www.youtube.com/watch?v=4czmCgJryUM```
 
 ## Program usage
@@ -65,7 +65,7 @@ Create ```feedback.bat``` with the following content:
 ```
 (Path to vlc might change depending of your setup)
 
-Then, call the program with the followin ```-c``` parameter:
+Then, call the program with the followin ```-c``` parameter:  
 ```./P00pMaker config.json 'https://www.youtube.com/watch?v=VTaoMHjnRbM' -c "feeback.bat {}"```
 
 
