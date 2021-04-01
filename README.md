@@ -65,7 +65,7 @@ Create ```feedback.bat``` with the following content:
 (Path to vlc might change depending of your setup)
 
 Then, call the program with the followin ```-c``` parameter:  
-```./P00pMaker config.json 'https://www.youtube.com/watch?v=VTaoMHjnRbM' -c "feeback.bat {}"```
+```.\P00pMaker.exe config.json 'https://www.youtube.com/watch?v=VTaoMHjnRbM' -c "feeback.bat {}"```
 
 
 ### Interactive process
