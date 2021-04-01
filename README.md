@@ -13,9 +13,8 @@ You can get it via the release tab or install it manually.
 
 ### From source
 
-1. Install requirements of CLI original project with ```pip install -r ../requirements.txt```
-2. Install requirements with ```pip install -r requirements.txt```
-3. Set up the external dependencies by following the tutorial in [SM library github page](https://github.com/pop123123123/sentence-mixing)
+1. Install requirements with ```pip install -r requirements.txt```
+2. Set up the external dependencies by following the tutorial in [SM library github page](https://github.com/pop123123123/sentence-mixing)
 
 #### Sanity check
 
