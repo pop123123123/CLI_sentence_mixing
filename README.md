@@ -143,7 +143,7 @@ For word "Est", if you want to hear phoneme "e", you can use word "Et" ; if you 
 
 #### Unsupported languages
 
-Please refer to [this section](https://github.com/pop123123123/sentence-mixing/blob/master/README.md#unsupported-language) of the Sentence Mixing library documentation.
+Please refer to [this section](https://github.com/pop123123123/sentence-mixing/blob/master/README.md#add-an-unsupported-language) of the Sentence Mixing library documentation.
 
 ## Building project
 
