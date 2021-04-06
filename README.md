@@ -11,6 +11,22 @@ You can get it via the release tab or install it manually.
 1. Choose a [release version](https://github.com/pop123123123/CLI_sentence_mixing/releases)
 2. Uncompress the release archive 
 
+#### Language support
+
+The default language of releases is French. You can however use another language among the one proposed in folder ```aligner/SM-Dictionaries```.
+
+All you have to do is to download the appropriate [MFA pretrained model](https://montreal-forced-aligner.readthedocs.io/en/latest/pretrained_models.html) and to update file ```config.json```
+
+Example:
+
+Let's say you want to use English language:
+1. Download [English accoustic model](https://github.com/MontrealCorpusTools/mfa-models/raw/master/acoustic/english.zip) and put it in ```aligner/pretrained_models```
+2. In ```config.json```, change:
+    1. ```lang``` value to ```en``` 
+    2. ```trained_model``` value to ```aligner/pretrained_models/english.zip```
+    3. ```dict_path``` value to ```aligner/SM-Dictionaries/en/english.dict```
+    4. ```dict_consonant_vowel_path``` value to ```aligner/SM-Dictionaries/en/en_consonant_vowel.dict```
+
 ### From source
 
 1. Install requirements with ```pip install -r requirements.txt```
@@ -124,6 +140,12 @@ For exemple, word "Est" can be pronounced:
 Thus, it is for the moment forbidden to write down word "Est". Waiting for a disambiguation feature, just **change the word for an homophone**.
 
 For word "Est", if you want to hear phoneme "e", you can use word "Et" ; if you want to hear phonemes "e s t", you can use the sequence of words "S" "te" (not perfect coverage of phonemes in this case however).
+
+#### Unsupported language
+
+If you want to use a language that is supported by an [MFA pretrained model](https://montreal-forced-aligner.readthedocs.io/en/latest/pretrained_models.html) but present in [SM-Dictionaries](https://github.com/nbusser/SM-Dictionaries), you can follow this procedure:
+1. Find a matching dictionary giving for each word of the language its decomposition to phones
+2. Create a consonant-vowel dict where you specifies which phonems are consonants and which phonems are vowels
 
 ## Building project
 
