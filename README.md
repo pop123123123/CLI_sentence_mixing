@@ -143,9 +143,7 @@ For word "Est", if you want to hear phoneme "e", you can use word "Et" ; if you 
 
 #### Unsupported language
 
-If you want to use a language that is supported by an [MFA pretrained model](https://montreal-forced-aligner.readthedocs.io/en/latest/pretrained_models.html) but present in [SM-Dictionaries](https://github.com/nbusser/SM-Dictionaries), you can follow this procedure:
-1. Find a matching dictionary giving for each word of the language its decomposition to phones
-2. Create a consonant-vowel dict where you specifies which phonems are consonants and which phonems are vowels
+Please refer to [this section](https://github.com/pop123123123/sentence-mixing/blob/master/README.md#unsupported-language) of Sentence Mixing library documentation.
 
 ## Building project
 
