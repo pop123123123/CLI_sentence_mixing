@@ -24,6 +24,7 @@ All you have to do is to download the appropriate [MFA pretrained model](https:/
     2. ```trained_model``` value to ```aligner/pretrained_models/english.zip```
     3. ```dict_path``` value to ```aligner/SM-Dictionaries/en/english.dict```
     4. ```dict_consonant_vowel_path``` value to ```aligner/SM-Dictionaries/en/en_consonant_vowel.dict```
+
 (For Windows release, replace ```/``` characters by ```\\``` characters).
 
 ### From source
