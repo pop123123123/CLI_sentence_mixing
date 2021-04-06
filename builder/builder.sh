@@ -19,13 +19,19 @@ echo "
 {
     \"align_exe\": \"aligner/bin/mfa_align\",
     \"trained_model\": \"aligner/pretrained_models/${FRENCH_MODEL_NAME}\",
-    \"dict_path\": \"aligner/fr.dict\",
-    \"dict_consonant_vowel_path\": \"aligner/fr_consonant_vowel.dict\",
+    \"dict_path\": \"aligner/SM-Dictionaries/fr/fr.dict\",
+    \"dict_consonant_vowel_path\": \"aligner/SM-Dictionaries/fr/fr_consonant_vowel.dict\",
     \"lang\": \"fr\",
     \"folder\": \".subs\"
 }" > config.json
 
-pyinstaller --name="P00pMaker" ../video_creator_main.py --add-data montreal-forced-aligner/bin:aligner/bin --add-data montreal-forced-aligner/pretrained_models:aligner/pretrained_models --add-data montreal-forced-aligner/lib:aligner/bin --add-data out:aligner/out --add-data SM-Dictionaries/fr.dict:aligner --add-data SM-Dictionaries/fr_consonant_vowel.dict:aligner --add-data french_prosodylab.zip:aligner/pretrained_models --add-data config.json:.
+pyinstaller --name="${PROJECT_NAME}" ../video_creator_main.py --add-data montreal-forced-aligner/bin:aligner/bin --add-data montreal-forced-aligner/pretrained_models:aligner/pretrained_models --add-data montreal-forced-aligner/lib:aligner/bin --add-data out:aligner/out --add-data SM-Dictionaries:aligner/SM-Dictionaries --add-data french_prosodylab.zip:aligner/pretrained_models --add-data config.json:.
+
+rm dist/SentenceMixerCLI/aligner/pretrained_models/english.zip
+
+cp -r dist/"${PROJECT_NAME}" .
+tar -czvf "${ARCHIVE_NAME}" "${PROJECT_NAME}"
+rm -rf "${PROJECT_NAME}"
 
 rm -rf montreal-forced-aligner
 rm -rf out
