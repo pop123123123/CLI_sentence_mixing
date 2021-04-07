@@ -6,6 +6,8 @@ You can get it via the release tab or install it manually.
 
 ## Installation
 
+Here is a [tutorial video](https://www.youtube.com/watch?v=JL6l4rNN3tU) showing both installation and usage of the project.
+
 ### Release
 
 1. Choose a [release version](https://github.com/pop123123123/CLI_sentence_mixing/releases)
@@ -41,6 +43,8 @@ Example:
 ```python sample_cli.py "Bonjour" ../config.json https://www.youtube.com/watch?v=4czmCgJryUM```
 
 ## Program usage
+
+Here is a [tutorial video](https://www.youtube.com/watch?v=JL6l4rNN3tU) showing both installation and usage of the project.
 
 The following sections will explain you how to run and interact with the CLI Youtube Poop generation program.
 
