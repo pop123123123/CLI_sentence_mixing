@@ -6,7 +6,7 @@ You can get it via the release tab or install it manually.
 
 ## Installation
 
-Here is a [tutorial video](https://www.youtube.com/watch?v=JL6l4rNN3tU) showing both installation and usage of the project.
+Here is a [tutorial video](https://www.youtube.com/watch?v=JL6l4rNN3tU) showing both installation and usage of the project ([French version](https://www.youtube.com/watch?v=emhjAkYXr-8)).
 
 ### Release
 
@@ -44,8 +44,7 @@ Example:
 
 ## Program usage
 
-Here is a [tutorial video](https://www.youtube.com/watch?v=JL6l4rNN3tU) showing both installation and usage of the project.
-
+Here is a [tutorial video](https://www.youtube.com/watch?v=JL6l4rNN3tU) showing both installation and usage of the project ([French version](https://www.youtube.com/watch?v=emhjAkYXr-8)).
 The following sections will explain you how to run and interact with the CLI Youtube Poop generation program.
 
 ### Running the script
