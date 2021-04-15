@@ -146,6 +146,13 @@ Thus, it is for the moment forbidden to write down word "Est". Waiting for a dis
 
 For word "Est", if you want to hear phoneme "e", you can use word "Et" ; if you want to hear phonemes "e s t", you can use the sequence of words "S" "te" (not perfect coverage of phonemes in this case however).
 
+#### Unknown encoding idna
+
+This error is particulary serious and randomly shows when using an outdated version of youtube-dl.  
+If you have installed the application from source, you can simply update youtube-dl via pip.  
+There is no solution for the moment for release versions. The only thing you can do is to install the program from source.  
+We are looking for a solution concerning this problem  .
+
 #### Unsupported languages
 
 Please refer to [this section](https://github.com/pop123123123/sentence-mixing/blob/master/README.md#add-an-unsupported-language) of the Sentence Mixing library documentation.
