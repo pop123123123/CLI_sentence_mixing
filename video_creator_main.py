@@ -12,12 +12,12 @@ from cli_interface import loop_interface
 VIDEO_OUT = "out.mp4"
 
 
-def main(audio_command, config_path, skip_first, urls):
+def main(audio_command, config_path, skip_first, urls, seed=0):
     sm.prepare_sm_config_file(config_path)
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
         futures_vids = executor.map(dl_video, urls)
-        futures_vids_audio = executor.map(sm.get_videos, [urls])
+        futures_vids_audio = executor.map(sm.get_videos, [urls], [seed])
 
         total_timestamps, total_text, videos = loop_interface(
             audio_command, futures_vids_audio
