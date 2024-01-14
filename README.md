@@ -19,10 +19,10 @@ Here is a [tutorial video](https://www.youtube.com/watch?v=JL6l4rNN3tU) showing 
 
 The default language of releases is French. You can however use another language among the ones proposed in ```aligner/SM-Dictionaries```.
 
-All you have to do is to download the appropriate [MFA pretrained model](https://montreal-forced-aligner.readthedocs.io/en/latest/pretrained_models.html) and to update ```config.json``` in the release's root directory.
+All you have to do is to download the appropriate [MFA pretrained model](https://montreal-forced-aligner.readthedocs.io/en/v1.0/pretrained_models.html#pretrained-acoustic-models) and to update ```config.json``` in the release's root directory.
 
 ##### Example (English):
-1. Download the [English accoustic model](https://github.com/MontrealCorpusTools/mfa-models/raw/master/acoustic/english.zip) and put it in ```aligner/pretrained_models```
+1. Download the [English accoustic model](https://github.com/MontrealCorpusTools/mfa-models/releases/download/acoustic-archive-v1.0/english.zip) and put it in ```aligner/pretrained_models```
 2. In ```config.json```, change:
     1. ```lang``` value to ```en``` 
     2. ```trained_model``` value to ```aligner/pretrained_models/english.zip```
